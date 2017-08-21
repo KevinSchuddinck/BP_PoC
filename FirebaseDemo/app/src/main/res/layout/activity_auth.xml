@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.schuddinck.firebasedemo.Activities.AuthActivity">
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="Login"/>
+
+    <EditText
+        android:id="@+id/txfEmail"
+        android:layout_below="@id/txtLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="email"/>
+
+    <EditText
+        android:id="@+id/txfPassword"
+        android:layout_below="@id/txfEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="password"/>
+
+    <LinearLayout
+        android:id="@+id/loginLL"
+        android:layout_below="@+id/txfPassword"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="logout"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_below="@id/loginLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="Register"/>
+
+
+
+    <EditText
+        android:id="@+id/txfEmailR"
+        android:layout_below="@id/txtRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="email"/>
+
+    <EditText
+        android:id="@+id/txfPasswordR"
+        android:layout_below="@id/txfEmailR"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="password"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_below="@id/txfPasswordR"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="register"/>
+
+    <TextView
+        android:id="@+id/txtLoginOther"
+        android:layout_below="@id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="Other login"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btnFBLogin"
+        android:layout_below="@id/txtLoginOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/txtLoggedIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textSize="30sp"
+        android:text="You are logged in as "/>
+
+</RelativeLayout>
